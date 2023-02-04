@@ -2,15 +2,16 @@
   "version": 2,
   "builds": [
     {       
-      "src": "./src/index.js",
+      "src": "./build/cloud/main.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/index.js"
+      "dest": "./build/cloud/main.js"
     }
   ]
 }
+
  
